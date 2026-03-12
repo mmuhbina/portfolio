@@ -30,6 +30,8 @@
 
 /* The intro text centered */
 .intro-text {
+    position: absolute;
+    z-index: 10000;
     font-family: 'Times New Roman', Times, serif; /* Elegant serif font */
     color: #ffd700 !important; /* Elegant gold tone */
     font-size: 4rem; /* Slightly smaller for elegance */
