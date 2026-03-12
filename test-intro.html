@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+/* --- Intro Animation (Simple & Elegant) --- */
+#intro-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #070707;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    pointer-events: none; /* Make sure it doesn't block interactions once invisible */
+    animation: fadeOutOverlay 1s ease-in-out 2.5s forwards; /* Fades out the whole dark overlay gently */
+}
+
+/* The intro text centered */
+.intro-text {
+    position: absolute;
+    z-index: 10000;
+    font-family: 'Times New Roman', Times, serif; /* Elegant serif font */
+    color: #ffd700 !important; /* Elegant gold tone */
+    font-size: 4rem; /* Slightly smaller for elegance */
+    font-weight: 400; /* Lighter weight for a soft look */
+    letter-spacing: 2px;
+    opacity: 0;
+    animation: fadeText 2.2s ease-in-out forwards;
+}
+
+/* Animations */
+@keyframes fadeText {
+    0% { opacity: 0; transform: translateY(10px); }
+    30%, 70% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-10px); }
+}
+
+@keyframes fadeOutOverlay {
+    0% { opacity: 1; visibility: visible; }
+    100% { opacity: 0; visibility: hidden; }
+}
+</style>
+</head>
+<body>
+    <div id="intro-animation">
+        <h1 class="intro-text">Muhbina.</h1>
+    </div>
+    <div style="height: 200vh; background: blue;">MAIN CONTENT</div>
+</body>
+</html>
