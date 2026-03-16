@@ -21,9 +21,32 @@
 </head>
 
 <body>
-    <!-- Intro Animation -->
-    <div id="intro-animation">
-        <h1 class="intro-text">Muhbina Farshana.</h1>
+
+    <!-- Intro Preloader -->
+    <div id="preloader">
+        <div class="preloader-grid">
+            <div class="grid-line horiz"></div>
+            <div class="grid-line vert"></div>
+        </div>
+        <div class="preloader-shapes">
+            <div class="pre-shape rect"></div>
+            <div class="pre-shape circle"></div>
+            <div class="pre-shape square"></div>
+        </div>
+        <div class="preloader-text-wrap">
+            <div class="preloader-logo">
+                <h1 class="preloader-name">
+                    <span class="pre-char">M</span><span class="pre-char">u</span><span class="pre-char">h</span><span
+                        class="pre-char">b</span><span class="pre-char">i</span><span class="pre-char">n</span><span
+                        class="pre-char">a</span><span class="pre-char pre-space">&nbsp;</span><span
+                        class="pre-char">F</span><span class="pre-char">a</span><span class="pre-char">r</span><span
+                        class="pre-char">s</span><span class="pre-char">h</span><span class="pre-char">a</span><span
+                        class="pre-char">n</span><span class="pre-char">a</span><span
+                        class="pre-char pre-space">&nbsp;</span><span class="pre-char">N</span><span
+                        class="pre-char">k</span>
+                </h1>
+            </div>
+        </div>
     </div>
     <header class="header-container">
         <div class="container">
@@ -59,7 +82,6 @@
                         <div class="dropdown-menu">
                             <a href="#about">About</a>
                             <a href="#projects">Projects</a>
-                            <a href="#services">Services</a>
                             <a href="#contact">Contact</a>
                         </div>
                     </div>
@@ -84,8 +106,7 @@
                             all-things art
                         </h2>
                         <div class="hero-tags">
-                            <span class="hero-tag tag-orange"></i> UI/UX
-                                Designer</span>
+                            <span class="hero-tag tag-orange"></i> UI/UX Designer</span>
                             <span class="hero-tag tag-blue">Front-End Developer</span>
                         </div>
                     </div>
@@ -115,61 +136,94 @@
                 <!-- Card 2: Fintech Dark -->
                 <div class="project-card card-light">
                     <div class="card-inner">
-                        <img src="./assets/mobone.png">
+                        <img src="./assets/logistics.png">
+                    </div>
+                </div>
+
+                <div class="project-card card-light">
+                    <div class="card-inner">
+                        <img src="./assets/medcare.png">
                     </div>
                 </div>
 
                 <!-- Duplicate Card 1 for loop illusion if needed, but Slick handles it -->
                 <div class="project-card card-dark">
                     <div class="card-inner">
-                        <img src="./assets/log1.png">
+                        <img src="./assets/creative.png">
                     </div>
                 </div>
                 <!-- Card 2: Fintech Dark -->
                 <div class="project-card card-light">
                     <div class="card-inner">
-                        <img src="./assets/mob2.png">
+                        <img src="./assets/mobp.png">
                     </div>
                 </div>
 
                 <!-- Duplicate Card 1 for loop illusion if needed, but Slick handles it -->
                 <div class="project-card card-dark">
                     <div class="card-inner">
-                        <img src="./assets/flav1.png">
+                        <img src="./assets/travel.png">
                     </div>
                 </div>
+
+
             </div>
         </section>
 
         <!-- About Section -->
-        <section id="about" class="about-section">
-            <div class="container about-container">
-                <div class="about-image-wrapper">
-                    <img src="./assets/rash2.png" alt="Rashmi P" class="about-photo active">
-                    <img src="./assets/rash3.jpeg" alt="Rashmi P 2" class="about-photo">
+        <section id="about" class="about-section about-redesign">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="about-header">
+                    <h2 class="about-title">About Me</h2>
+                    <p class="about-subtitle">Designing with purpose, building with passion.</p>
                 </div>
-                <div class="about-content">
-                    <div class="section-tag">About Me</div>
-                    <h2 class="about-title">Good design,<br>fewer clicks,<br>happier users.</h2>
-                    <p class="about-desc">
-                        Hi! I’m Rashmi, As a UI/UX Designer and Front-End Developer, I look beyond the screen to
-                        understand
-                        the
-                        person behind it. I’m passionate about creating high-impact, minimalist designs that simplify
-                        everyday life. If you’re looking for a collaborator who values detail-oriented aesthetics and
-                        empathetic problem-solving, I’d love to bring your vision to life.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <span class="stat-number">0.5+</span>
-                            <span class="stat-label">Years Exp.</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">5+</span>
-                            <span class="stat-label">Projects</span>
-                        </div>
 
-                        <a href="./assets/MUHBINA FARSHANA.pdf" target="_blank" class="download-cv-btn">
+                <!-- Two Column Layout -->
+                <div class="about-two-col">
+                    <!-- Left: Who I Am Card -->
+                    <div class="about-who-card">
+                        <div class="about-who-header">
+                            <span class="about-who-icon"><i class="ph ph-smiley"></i></span>
+                            <h3>Who I Am</h3>
+                        </div>
+                        <p>I am a <strong>UI/UX Designer</strong> passionate about building mobile and web interfaces
+                            that balance visual appeal with seamless usability. I specialize in <strong>Figma</strong>
+                            and responsive layouts, crafting clean and high-performance interfaces that bridge the gap
+                            between design and user needs.</p>
+                        <p>Dedicated to bringing fresh ideas, structured thinking and strong collaboration to every
+                            project. I design with empathy and clarity to ensure every screen supports real user needs.
+                        </p>
+                        <div class="about-contact-info">
+                            <span><i class="ph ph-map-pin"></i> Palakkad</span>
+                            <span><i class="ph ph-envelope-simple"></i>mmuhbina@gmail.com</span>
+                            <span><i class="ph ph-phone"></i> 7994771215</span>
+                        </div>
+                    </div>
+
+                    <!-- Right: Education Timeline -->
+                    <div class="about-edu-col">
+                        <div class="about-edu-header">
+                            <span class="about-edu-icon"><i class="ph ph-graduation-cap"></i></span>
+                            <h3>Education</h3>
+                        </div>
+                        <div class="edu-timeline">
+                            <div class="edu-item">
+                                <div class="edu-date">08/2025 – 01/2025</div>
+                                <div class="edu-card">
+                                    <h4>Skill Diploma in UI/UX Design</h4>
+                                    <p>Technodot Acadamy of R&amp;D&amp;I</p>
+                                </div>
+                            </div>
+                            <div class="edu-item">
+                                <div class="edu-date">2022 – 2025</div>
+                                <div class="edu-card">
+                                    <h4>Bachelor of Commerce</h4>
+                                    <p>Calicut university</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="./assets/MUHBINA FARSHANA.pdf" target="_blank" class="about-cv-btn">
                             Download CV
                         </a>
                     </div>
@@ -203,7 +257,7 @@
         </div>
 
         <!-- Services Section -->
-        <section id="services" class="services">
+        <!-- <section id="services" class="services">
             <div class="container">
                 <div class="section-tag">Services</div>
                 <h2>Design with Intent.<br>Built to Scale.</h2>
@@ -212,13 +266,13 @@
                     business.</p>
 
                 <div class="services-grid">
-                    <!-- Service 1 -->
-                    <div class="folder-card">
+                    <Service 1 -->
+        <!-- <div class="folder-card">
                         <div class="folder-icon-wrapper">
                             <div class="folder-tab"></div>
                             <div class="folder-content">
-                                <img src="./assets/flav1.png" class="project-thumb" alt="Project 1">
-                                <img src="./assets/log1.png" class="project-thumb" alt="Project 2">
+                                <img src="./assets/creative.png" class="project-thumb" alt="Project 1">
+                                <img src="./assets/logistics.png" class="project-thumb" alt="Project 2">
                                 <img src="https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?w=300&q=80"
                                     class="project-thumb" alt="Project 3">
                             </div>
@@ -227,8 +281,8 @@
                         <span class="folder-label">Web Design</span>
                     </div>
 
-                    <!-- Service 2 -->
-                    <div class="folder-card">
+                    < Service 2 -->
+        <!-- <div class="folder-card">
                         <div class="folder-icon-wrapper">
                             <div class="folder-tab"></div>
                             <div class="folder-content">
@@ -242,10 +296,10 @@
                             <div class="folder-body"></div>
                         </div>
                         <span class="folder-label">App Design</span>
-                    </div>
+                    </div> -->
 
-                    <!-- Service 3 -->
-                    <div class="folder-card">
+        <!-- Service 3 -->
+        <!-- <div class="folder-card">
                         <div class="folder-icon-wrapper">
                             <div class="folder-tab"></div>
                             <div class="folder-content">
@@ -261,86 +315,97 @@
                         <span class="folder-label">Web Development</span>
                     </div>
                 </div>
-        </section>
+        </section> -->
 
         <!-- Vertical Projects Section -->
         <section id="projects" class="container vertical-projects-section">
             <div class="projects-header">
-                <div class="projects-badge">Projects</div>
-                <h2 class="section-title">Designed <br class="hide-desktop">with Purpose,<br>Built to Perform</h2>
+                <h2 class="about-title">Projects</h2>
+                <!-- <h2 class="section-title">Designed <br class="hide-desktop">with Purpose,<br>Built to Perform</h2>
                 <p class="section-subtitle">A showcase of work blending usability,<br>strategy, and clean
-                    implementation.</p>
+                    implementation.</p> -->
             </div>
 
             <div class="vertical-project-list">
                 <!-- Project 1 -->
-                <div class="v-project-card">
-                    <img src="./assets/foodapp.jpg" alt="Mobile Project" class="v-project-img">
-                    <div class="project-info-bar">
-                        <div class="info-left">
-                            <div class="project-text">
-                                <h3>Peppino Food</h3>
-                                <p>A user-centered food ordering app focused on quick discovery, smooth flow, and
-                                    frictionless checkout.</p>
+                <div class="project-new-card">
+                    <div class="project-card-image">
+                        <img src="./assets/pizzaappmobile.png" alt="Peppino Food">
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-number">01</span>
+                            <div class="project-tags">
+                                <span class="tag">UI/UX Design</span>
+                                <span class="tag">Mobile App</span>
                             </div>
                         </div>
-
+                        <h3 class="project-card-title">Peppino Food – Seamless Ordering</h3>
+                        <p class="project-card-desc">A user-centered food ordering app focused on quick discovery,
+                            smooth flow, and frictionless checkout.</p>
                     </div>
                 </div>
 
-
                 <!-- Project 2 -->
-                <div class="v-project-card">
-                    <img src="./assets/flavour.jpg" alt="Gravity Project" class="v-project-img">
-                    <div class="project-info-bar">
-                        <div class="info-left">
-                            <div class="project-text">
-                                <h3>Flavour Town</h3>
-                                <p>A visually rich restaurant website highlighting cuisine, ambiance, and effortless
-                                    table reservations.</p>
+                <div class="project-new-card">
+                    <div class="project-card-image">
+                        <img src="./assets/wander world.png" alt="wander world">
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-number">02</span>
+                            <div class="project-tags">
+                                <span class="tag">Web Design</span>
+                                <span class="tag">Travel</span>
                             </div>
                         </div>
-
+                        <h3 class="project-card-title">Wander World – Travels</h3>
+                        <p class="project-card-desc">The platform offers a smooth and user-friendly experience for
+                            discovering travel packages, learning about destinations, and booking vacations online.</p>
                     </div>
                 </div>
 
                 <!-- Project 3 -->
-                <div class="v-project-card">
-                    <img src="./assets/yourlogistic.jpg" alt="Sienna Project" class="v-project-img">
-                    <div class="project-info-bar">
-                        <div class="info-left">
-                            <div class="project-text">
-                                <h3>Your Logistic Solution</h3>
-                                <p>A modern logistics website designed for clarity, easy tracking, and user trust across
-                                    devices.</p>
+                <div class="project-new-card">
+                    <div class="project-card-image">
+                        <img src="./assets/logistics (2).png" alt=" Logico Logistics ">
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-number">03</span>
+                            <div class="project-tags">
+                                <span class="tag">Logistics</span>
+                                <span class="tag">Corporate</span>
                             </div>
                         </div>
-
+                        <h3 class="project-card-title"> Logico Logistics</h3>
+                        <p class="project-card-desc">A modern logistics website designed for clarity, easy tracking, and
+                            user trust across devices.</p>
                     </div>
                 </div>
 
                 <!-- Project 4 -->
-
-                <div class="v-project-card">
-                    <img src="./assets/cookease.jpg" alt="Frame 24 Project" class="v-project-img">
-                    <div class="project-info-bar">
-                        <div class="info-left">
-                            <div class="project-text">
-                                <h3>CookEase</h3>
-                                <p>A user-centered cooking app designed for easy recipe discovery and guided,
-                                    step-by-step cooking.</p>
+                <div class="project-new-card">
+                    <div class="project-card-image">
+                        <img src="./assets/medcareapp.png" alt="medcare">
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-number">04</span>
+                            <div class="project-tags">
+                                <span class="tag">App Design</span>
+                                <span class="tag">Health</span>
                             </div>
                         </div>
-
+                        <h3 class="project-card-title">MedCare - Find dr. Online</h3>
+                        <p class="project-card-desc">The app focuses on a clean, user-friendly interface that allows
+                            patients to quickly find doctors, book appointments, and manage their healthcare needs from
+                            their mobile devices</p>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="simple-line">
-            <div class="container simple-line-inner">
-                <p>Design bold.<br> Launch fast.</p>
-            </div>
-        </div>
+
 
         <!-- Contact Section -->
         <section id="contact" class="contact-section">
@@ -397,23 +462,22 @@
                         <div class="footer-col">
                             <h4>Socials</h4>
                             <a href="https://github.com/mmuhbina/portfolio.git" target="_blank">GitHub</a>
-                            <a href="https://www.instagram.com/_ra_sh__mi_?igsh=cGJ1OWhqanA4NTY4&utm_source=qr"
-                                target="_blank">Instagram</a>
-                            <a href="http://linkedin.com/in/rashmi-panathara" target="_blank">LinkedIn</a>
-                            <a href="https://wa.me/918590595194" target="_blank">WhatsApp</a>
-                            <a href="mailto:rashmiray1211@gmail.com">Gmail</a>
+                            <a href="https://www.instagram.com/muhbiinaa?igsh=MTI5MnA5enlobTQ0aQ==">Instagram</a>
+                            <a
+                                href="https://www.linkedin.com/in/muhbina-naithakottil?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">LinkedIn</a>
+                            <a href="https://wa.me/917994771215" target="_blank">WhatsApp</a>
+                            <a href="mailto:mmuhbina@gmail.com">Gmail</a>
                         </div>
                         <div class="footer-col">
                             <h4>Quick Links</h4>
                             <a href="#about">About</a>
                             <a href="#projects">Projects</a>
-                            <a href="#services">Services</a>
                             <a href="#contact">Contact</a>
                         </div>
                     </div>
                 </div>
                 <div class="footer-bottom">
-                    <p>&copy; 2026 Rashmi P. All Rights Reserved.</p>
+                    <p>&copy; 2026 muhbina. All Rights Reserved.</p>
                     <a href="#" class="back-to-top">Back to Top <i class="ph ph-arrow-up"></i></a>
                 </div>
             </div>
@@ -428,6 +492,86 @@
     <div class="cursor-outline" data-cursor-outline></div>
 
     <script src="./js/script.js"></script>
+
+    <!-- GSAP for Intro Animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script>
+        function hidePreloader() {
+            const preloader = document.getElementById('preloader');
+            if (preloader) {
+                preloader.style.transition = 'opacity 0.5s ease';
+                preloader.style.opacity = '0';
+                setTimeout(() => {
+                    preloader.style.display = 'none';
+                    document.body.style.overflow = '';
+                }, 500);
+            }
+        }
+
+        // Safety fallback — hide after 4s even if GSAP fails
+        const safetyTimer = setTimeout(hidePreloader, 4000);
+
+        function startIntro() {
+            if (typeof gsap === 'undefined') {
+                clearTimeout(safetyTimer);
+                hidePreloader();
+                return;
+            }
+
+            const preloader = document.getElementById('preloader');
+            const chars = document.querySelectorAll('.pre-char');
+            const horizLine = document.querySelector('.grid-line.horiz');
+            const vertLine = document.querySelector('.grid-line.vert');
+            const shapes = document.querySelectorAll('.pre-shape');
+
+            // Prevent scrolling during intro
+            document.body.style.overflow = 'hidden';
+
+            // Set initial hidden states
+            gsap.set(chars, { scale: 0.9, opacity: 0 });
+            gsap.set(shapes, { opacity: 0, scale: 0.8 });
+            gsap.set(horizLine, { scaleX: 0, xPercent: -50, left: '50%' });
+            gsap.set(vertLine, { scaleY: 0, yPercent: -50, top: '50%' });
+
+            const tl = gsap.timeline({
+                onComplete: () => {
+                    clearTimeout(safetyTimer);
+                    preloader.style.pointerEvents = 'none';
+                    document.body.style.overflow = '';
+                }
+            });
+
+            // 1. Grid lines slide and scale in (MOVE)
+            tl.to(horizLine, { scaleX: 1, duration: 0.6, ease: 'power3.inOut' });
+            tl.to(vertLine, { scaleY: 1, duration: 0.6, ease: 'power3.inOut' }, '<');
+
+            // Subtle grid movement
+            tl.to(horizLine, { y: 20, duration: 1, ease: 'sine.inOut', yoyo: true, repeat: 1 }, '-=0.5');
+            tl.to(vertLine, { x: 20, duration: 1, ease: 'sine.inOut', yoyo: true, repeat: 1 }, '<');
+
+            // 2. Shapes fade in (FASTER)
+            tl.to(shapes, { opacity: 0.6, scale: 1, duration: 0.4, stagger: 0.05, ease: 'power2.out' }, '-=0.8');
+
+            // 3. Name characters FADE in (FASTER)
+            tl.to(chars, { scale: 1, opacity: 1, duration: 0.4, stagger: 0.02, ease: 'power2.out' }, '-=0.6');
+
+            // 5. Hold briefly (FASTER)
+            tl.to({}, { duration: 0.4 });
+
+            // 6. Fade everything out (FASTER)
+            tl.to([chars, shapes, horizLine, vertLine],
+                { opacity: 0, scale: 1.1, duration: 0.3, stagger: 0.01, ease: 'power2.in' }
+            );
+
+            tl.to(preloader, {
+                opacity: 0, duration: 0.4, ease: 'power2.inOut',
+                onComplete: () => { preloader.style.display = 'none'; }
+            }, '-=0.1');
+        }
+
+        // Run immediately as script is at bottom
+        startIntro();
+    </script>
 </body>
 
 </html>
